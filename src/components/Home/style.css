@@ -5,8 +5,10 @@
     font-size: large;
     box-sizing: border-box;
     width: 100%;
-}
 
+    /* height: calc(100vh - 5rem); */
+    /* transition: all 1s ease; */
+}
 
 /* Dados */
 

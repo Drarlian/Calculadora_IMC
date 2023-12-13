@@ -13,7 +13,8 @@
 
 .menu{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 10px;
   align-items: center;
   background-color: rgb(63, 72, 204);
   height: 5rem;
@@ -41,4 +42,14 @@
 .menu li *:hover {
   background-color: white;
   color: black;
+}
+
+
+.container-lista{
+  margin-right: 0;
+  /* background-color: brown; */
+}
+.container-tema{
+  /* margin-left: 1000px; */
+  /* background-color: blueviolet; */
 }
