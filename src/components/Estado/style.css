@@ -1,0 +1,46 @@
+/* Estado */
+.estado{
+    display: flex;
+    /* background-color: crimson; */
+    padding: 1rem;
+    margin-left: 1rem;
+    justify-content: center;
+    /* align-items: start; */
+}
+
+.estado-itens{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    box-sizing: border-box;
+    /* background-color: orange; */
+}
+
+.estado-itens h2{
+    /* margin-bottom: 0; DEIXA O TITULO E O EMOJI COLADOS*/ 
+    /* align-items: start; */
+    /* flex: 1; */
+}
+
+.container-emoji{
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.estado-emoji{
+    /* background-color: aqua; */
+    font-size: 15vh;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    /* margin: 0; DEIXA O TITULO E O EMOJI COLADOS*/ 
+}
+
+.paragrafoSobre{
+    /* background-color: orange; */
+    /* margin-top: -15px; */
+}

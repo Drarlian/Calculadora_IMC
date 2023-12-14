@@ -18,6 +18,7 @@
   align-items: center;
   background-color: rgb(63, 72, 204);
   height: 5rem;
+  transition: all 1s ease;
 }
 
 .menu ul{
@@ -50,6 +51,26 @@
   /* background-color: brown; */
 }
 .container-tema{
+  padding-right: 1rem;
+  /* border-color: transparent; */
+  /* border-radius: 2px; */
   /* margin-left: 1000px; */
   /* background-color: blueviolet; */
+}
+
+.container-tema button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  background-color: transparent;
+  color: white;
+  border-color: transparent;
+  transition: all 1s ease;
+  border-radius: 2px;
+}
+
+.container-tema button:hover{
+  background-color: white;
+  color: black;
 }
