@@ -30,11 +30,12 @@ h1, h2{
     text-align: center;
 }
 
-@media only screen and (max-width: 600px){
+@media (max-width: 600px){
     .conteudos-home{
         display: inline;
         max-width: 100%;
         margin: 0;
+        height: calc(100vh + 4rem);
     }
 
     .dados-textos{
@@ -76,20 +77,7 @@ h1, h2{
     /* width: 50%; */
 }
 
-
-.dados-inputs button{
-    margin-top: 10px;
-    border-radius: 5px;
-    /* padding: 5px; */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgb(63, 72, 204);
-    cursor: pointer;
-    color: white;
-    transition: background-color 0.5s ease;
-}
-
-.dados-inputs button:hover{
-    background-color: rgb(110, 117, 214);
+/* .dados-inputs form button:hover{
+    background-color: #333335;
     transition-delay: 0.1s;
-}
+} */

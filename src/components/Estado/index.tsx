@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import EstadoInfos from '../EstadoInfos';
 
 interface EstadoAtributos {
     imc: number;
@@ -11,53 +12,18 @@ const Estado = ({ imc }: EstadoAtributos) => {
             <div className='estado-itens'>
                 {
                     imc > 0 && imc < 18.5 ? (
-                        <div>
-                            <h2>O seu resultado é:</h2>
-                            <div className='container-emoji'>
-                                <p>Magreza</p>
-                                <p className='estado-emoji'>😟</p>
-                                <p className='paragrafoSobre'>Veja mais sobre</p>
-                            </div>
-                        </div>
+                        <EstadoInfos imc={imc} resultado='Magreza' emoji='😟' />
                     ) : imc >= 18.5 && imc <= 24.9 ? (
-                        <div>
-                            <h2>O seu resultado é:</h2>
-                            <div className='container-emoji'>
-                                <p>Normal. Tudo Tranquilo</p>
-                                <p className='estado-emoji'>😎</p>
-                                <p className='paragrafoSobre'>Veja mais sobre</p>
-                            </div>
-                        </div>
+                        <EstadoInfos imc={imc} resultado='Normal. Tudo Tranquilo' emoji='😎' />
                     ) : imc >= 25 && imc <= 29.9 ? (
-                        <div>
-                            <h2>O seu resultado é:</h2>
-                            <div className='container-emoji'>
-                                <p>Sobrepeso</p>
-                                <p className='estado-emoji'>😓</p>
-                                <p className='paragrafoSobre'>Veja mais sobre</p>
-                            </div>
-                        </div>
+                        <EstadoInfos imc={imc} resultado='Sobrepeso' emoji='😓' />
                     ): imc >= 30 && imc <= 39.9 ? (
-                        <div>
-                            <h2>O seu resultado é:</h2>
-                            <div className='container-emoji'>
-                                <p>Obesidade</p>
-                                <p className='estado-emoji'>😥</p>
-                                <p className='paragrafoSobre'>Veja mais sobre</p>
-                            </div>
-                        </div>
+                        <EstadoInfos imc={imc} resultado='Obesidade' emoji='😥' />
                     ): imc > 40 ? (
-                        <div>
-                            <h2>O seu resultado é:</h2>
-                            <div className='container-emoji'>
-                                <p>Obesidade Grave</p>
-                                <p className='estado-emoji'>😰</p>
-                                <p className='paragrafoSobre'>Veja mais sobre</p>
-                            </div>
-                        </div>
+                        <EstadoInfos imc={imc} resultado='Obesidade Grave' emoji='😰' />
                     ): (
-                        <div>
-                            <h2>Realize o cálculo do seu IMC</h2>
+                        <div className="container-estado">   
+                            <h2>Descubra seu IMC</h2>
                             <div className='container-emoji'>
                                 <p>Nada aqui ainda.</p>
                                 <p className='estado-emoji'>🙂</p>
@@ -66,7 +32,6 @@ const Estado = ({ imc }: EstadoAtributos) => {
                     )
                 }
             </div>
-        {/* | 😎 | 😰 | 😥 | 🤨 | 😓 | 😟 | */}
         </div>
     );
 }

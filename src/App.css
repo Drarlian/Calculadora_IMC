@@ -68,6 +68,7 @@
   border-color: transparent;
   transition: all 1s ease;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .container-tema button:hover{

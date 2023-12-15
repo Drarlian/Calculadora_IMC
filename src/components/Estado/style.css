@@ -23,6 +23,16 @@
     /* flex: 1; */
 }
 
+.container-estado{
+    width: 320px;
+}
+
+@media (max-width: 600px){
+    .container-estado{
+        width: auto;
+    }
+}
+
 .container-emoji{
     display: flex;
     flex-direction: column;
@@ -38,9 +48,4 @@
     margin-top: 0%;
     margin-bottom: 0%;
     /* margin: 0; DEIXA O TITULO E O EMOJI COLADOS*/ 
-}
-
-.paragrafoSobre{
-    /* background-color: orange; */
-    /* margin-top: -15px; */
 }

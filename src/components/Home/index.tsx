@@ -1,7 +1,9 @@
-import React, { ButtonHTMLAttributes, useContext, useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import './style.css';
 import { InfosContext } from '../../contexts/InfosContext';
 import Estado from '../Estado';
+import { Botao } from './style.ts';
+import { toast } from 'react-toastify';
 
 const Home: React.FC = () => {
    const {tema} = useContext(InfosContext);
@@ -16,6 +18,10 @@ const Home: React.FC = () => {
     if (refAltura.current?.value != '' && peso != ''){
         let tempIMC = parseFloat((Number(peso) / Number(refAltura.current?.value) ** 2).toFixed(2))
         setImc(tempIMC);
+        refAltura.current.value = '';
+        setPeso('');
+    } else{
+        toast.warning('Digite todas as informações.')
     }
    }
 
@@ -31,7 +37,7 @@ const Home: React.FC = () => {
                 <form>
                     <input type='number' ref={refAltura} placeholder='Digite sua altura. Ex 1.5 (em metros)'></input>
                     <input type='number' value={peso} onChange={(e) => setPeso(e.target.value)} placeholder='Digite o seu peso. Ex 65.3 (Em KG)'></input>
-                    <button type='submit' onClick={(event) => calculaIMC(event)} style={tema === 'light'? {'backgroundColor': 'rgb(63, 72, 204)'}: {'backgroundColor': '#000000'}}>Calcular IMC</button>
+                    <Botao tema={tema} type='submit' onClick={(event) => calculaIMC(event)}>Calcular IMC</Botao>
                 </form>
             </div>
         </div>

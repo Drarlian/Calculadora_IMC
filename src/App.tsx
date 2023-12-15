@@ -6,6 +6,7 @@ import Contato from './components/Contato';
 import { useContext } from 'react';
 import { InfosContext } from './contexts/InfosContext';
 import { TiWeatherSunny } from "react-icons/ti";
+import { ToastContainer } from 'react-toastify';
 
 
 const App: React.FC = () => {
@@ -13,6 +14,7 @@ const App: React.FC = () => {
 
   return (
     <div className='pagina-toda'>
+      <ToastContainer />
       <div style={tema === 'light'? {'backgroundColor': '#3F48CC'}: {'backgroundColor': '#000000'}} className='menu'>
         <div/>
         <div className='container-lista'>
