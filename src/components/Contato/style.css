@@ -1,0 +1,112 @@
+.conteudos-contado{
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    height: calc(100vh - 5rem);
+}
+
+/* Titulo da Página */
+
+.titulo-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-top: 10px
+}
+
+/* Area com as divs de contato */
+
+.container-contatos{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    max-height: auto;
+}
+
+/* As divs de contato */
+
+.opcao-contato{
+    box-sizing: border-box;
+    background-color: aqua;
+    border: solid;
+    border-radius: 5px;
+    margin: 2rem;
+    width: 320px;
+    padding: 10px 10px;
+    overflow: auto;
+    margin-top: 12px;
+}
+
+@media (max-width: 600px){
+    .conteudos-contado{
+        height: 100%;
+        /* justify-content: center; */
+    }
+
+    .container-contatos{
+        /* background-color: pink; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .opcao-contato{
+        max-width: 100%;
+    }
+}
+
+/* Formulario da Primeira div */
+
+.formulario-contato{
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-contato form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contato form *{
+    margin-bottom: 5px;
+}
+
+.formulario-contato button{
+    margin-top: 10px;
+}
+
+/* Container da Segunda div */
+
+.container-redes{
+    /* background-color: blue; */
+    display: grid;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100% - 10rem);
+    /* text-align: center; */
+    /* align-items: center; */
+    /* height: 100%; */
+}
+
+.redes{
+    background-color: orange;
+    border: solid;
+    border-radius: 5px;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+}
+
+.container-redes a{
+}
+
+
+@media (max-width: 600px){
+    .container-redes{
+        height: 150px;
+    }
+}
