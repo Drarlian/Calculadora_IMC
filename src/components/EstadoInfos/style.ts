@@ -4,7 +4,7 @@ export const ParagrafoLink = styled.p<{tema: string}>`
     background-color: ${(props) => props.tema === 'light'? 'rgb(63, 72, 204)': '#000000'};
     border-radius: 5px;
     padding: 6px;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 
     *{
         color: white;

@@ -15,7 +15,7 @@ const App: React.FC = () => {
   return (
     <div className='pagina-toda'>
       <ToastContainer />
-      <div style={tema === 'light'? {'backgroundColor': '#3F48CC'}: {'backgroundColor': '#000000'}} className='menu'>
+      <div style={tema === 'light'? {'backgroundColor': '#3F48CC', 'borderBottomColor': 'black'}: {'backgroundColor': '#000000', 'borderBottomColor': 'white'}} className='menu'>
         <div/>
         <div className='container-lista'>
           <ul>

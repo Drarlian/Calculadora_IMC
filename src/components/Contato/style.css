@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     /* justify-content: start; */
-    height: calc(100vh - 5rem);
+    height: 100%; 
+    transition: all 1s ease;
 }
 
 /* Titulo da Página */
@@ -13,13 +14,15 @@
     justify-content: center;
     align-items: center;
     height: 50px;
-    padding-top: 10px
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: large;
 }
 
 /* Area com as divs de contato */
 
 .container-contatos{
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     justify-content: center;
     max-height: auto;
@@ -29,19 +32,32 @@
 
 .opcao-contato{
     box-sizing: border-box;
-    background-color: aqua;
+    background-color: rgb(63, 72, 204);
+    color: white;
     border: solid;
     border-radius: 5px;
+    border-width: 2px;
+    border-color: black;
     margin: 2rem;
-    width: 320px;
-    padding: 10px 10px;
-    overflow: auto;
+    width: 450px;
+    height: 600px;
+    padding: 10px 15px;
+    /* overflow: auto; */
     margin-top: 12px;
+    font-size: large;
+    transition: all 1s ease;
 }
 
-@media (max-width: 600px){
+
+@media (min-height: 900px){
     .conteudos-contado{
-        height: 100%;
+        height: calc(100vh - 50px);
+    }
+}
+
+@media (max-width: 780px){
+    .conteudos-contado{
+        height: calc(100% + 1rem);
         /* justify-content: center; */
     }
 
@@ -56,29 +72,13 @@
 
     .opcao-contato{
         max-width: 100%;
+        height: 100%;
     }
+
 }
 
 /* Formulario da Primeira div */
 
-.formulario-contato{
-    /* background-color: brown; */
-    display: flex;
-    justify-content: center;
-}
-
-.formulario-contato form{
-    display: flex;
-    flex-direction: column;
-}
-
-.formulario-contato form *{
-    margin-bottom: 5px;
-}
-
-.formulario-contato button{
-    margin-top: 10px;
-}
 
 /* Container da Segunda div */
 
@@ -87,26 +87,28 @@
     display: grid;
     padding: 5px;
     grid-template-columns: 1fr 1fr;
-    height: calc(100% - 10rem);
+    height: calc(100% - 11rem);
+    margin-bottom: 100px;
     /* text-align: center; */
     /* align-items: center; */
     /* height: 100%; */
 }
 
 .redes{
-    background-color: orange;
+    /* background-color: orange; */
     border: solid;
     border-radius: 5px;
     /* margin-left: 10px; */
     /* margin-right: 10px; */
+    transition: all 1s ease;
 }
 
-.container-redes a{
-}
-
-
-@media (max-width: 600px){
+@media (max-width: 780px){
     .container-redes{
-        height: 150px;
+        height: 250px;
+    }
+
+    .redes{
+        height: 170px;
     }
 }

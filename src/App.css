@@ -19,6 +19,8 @@
   background-color: rgb(63, 72, 204);
   height: 5rem;
   transition: all 1s ease;
+  border-bottom: solid;
+  border-bottom-width: 3px;
 }
 
 .menu ul{
