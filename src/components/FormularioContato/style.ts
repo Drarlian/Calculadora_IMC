@@ -16,7 +16,8 @@ export const DivFormularioC = styled.div<{tema: string}>`
     }
 
     input, select{
-        padding: 2px;
+        padding: 4px;
+        border-radius: 5px;
     }
 
     select{
@@ -24,10 +25,12 @@ export const DivFormularioC = styled.div<{tema: string}>`
     }
 
     textarea{
-        max-width: 250px;
+        max-width: 252px;
         max-height: 50px;
-        width: 250px;
+        width: 252px;
         height: 50px;
+        border-radius: 5px;
+        padding: 4px;
     }
 
     button{

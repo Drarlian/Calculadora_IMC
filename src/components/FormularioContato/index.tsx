@@ -43,7 +43,7 @@ const FormularioContato: React.FC = () => {
                 <option value='Outro'>Outro</option>
             </select>
             <label>Descrição:</label>
-            <textarea value={descricao} onChange={(e) => setDescricao(e.target.value)}></textarea>
+            <textarea value={descricao} onChange={(e) => setDescricao(e.target.value)} placeholder='Descreva seu problema.'></textarea>
             <button onClick={(e) => enviarFormulario(e)}>Enviar</button>
         </form>
     </DivFormularioC>
