@@ -1,4 +1,3 @@
-// import './style.css'
 import { ParagrafoLink } from './style.ts'
 
 import { Link } from "react-router-dom"

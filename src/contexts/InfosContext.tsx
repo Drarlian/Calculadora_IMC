@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-// import { Container } from './styles';
-
 interface Props {
   tema: string;
   alteraTema: () => void;
