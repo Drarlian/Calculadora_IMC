@@ -1,4 +1,4 @@
-import React, { ReactHTMLElement, useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 
 import { DivConteudosSobre } from './style.ts';
 import { InfosContext } from '../../contexts/InfosContext.tsx';
