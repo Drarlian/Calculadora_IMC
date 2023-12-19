@@ -1,8 +1,8 @@
 # Calculadora Online Responsiva de IMC
 
-<div>
-  ![Imagem1](https://github.com/Drarlian/Calculadora_IMC/assets/42438006/b8abb528-9af1-4fa4-8dfd-671733b0eeb3)
-</div>
+![Imagem1](https://github.com/Drarlian/Calculadora_IMC/assets/42438006/852bb929-e793-4809-bf51-b5b0b3a6cd05)
+
+![Imagem2](https://github.com/Drarlian/Calculadora_IMC/assets/42438006/a2aa36a6-31ff-4722-a5cb-cafd981508ad)
 
 ## 🌐 Acess Web Site
 
