@@ -6,7 +6,7 @@
 
 ## 🌐 Acess Web Site
 
-[https://helpful-zuccutto-2dfde0.netlify.app/](https://informativo-calculadora-imc.netlify.app/#/)
+[https://informativo-calculadora-imc.netlify.app](https://informativo-calculadora-imc.netlify.app/#/)
 
 ### 🌌 Tecnologias 🌌
 
